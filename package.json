@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start:dev": "npx nodemon"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
