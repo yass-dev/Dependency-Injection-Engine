@@ -17,6 +17,10 @@ export class YassContainer {
         this._initializeProviders(moduleMetadata.providers);
     }
 
+    public static resolve(type: Type): Instance {
+        return this._providersInstances.get(type);
+    }
+
     private static _initializeProviders(providers: Type[]): void {
         this._createProvidersPrototypes(providers);
         this._instantiateProviders(providers);
